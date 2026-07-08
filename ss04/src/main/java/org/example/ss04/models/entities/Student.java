@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
@@ -24,11 +25,11 @@ public class Student {
     @Column(name = "full_name",length = 100)
     private String fullName;
 
-    @JsonIgnore // bỏ qua thông tin khi trả về dữ liệu
     @Column(name = "age")
     private Integer age;
 
-    @JsonIgnoreProperties({"id"})
+    private LocalDate createdAt;
+
     @ManyToOne
     @JoinColumn(name = "class_id")
     private Classes classes;
@@ -40,5 +41,10 @@ public class Student {
             inverseJoinColumns = @JoinColumn(name = "role_id") // bên ngược lại
     )
     private Set<Role> roles;
+
+    @PrePersist // kịch hoạt khi thêm
+    void onCreated() {
+        createdAt = LocalDate.now();
+    }
 
 }

@@ -2,6 +2,8 @@ package org.example.ss04.models.services.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.example.ss04.models.dto.req.StudentReq;
+import org.example.ss04.models.dto.res.StudentRes;
+import org.example.ss04.models.entities.Course;
 import org.example.ss04.models.entities.Student;
 import org.example.ss04.models.repositories.IClassesRepository;
 import org.example.ss04.models.repositories.IStudentRepository;
@@ -35,5 +37,15 @@ public class StudentServiceImpl implements IStudentService {
         );
         return studentRepository.save(student);
 
+    }
+
+    @Override
+    public List<StudentRes> search(String search) {
+        return studentRepository.findAllByFullName(search);
+    }
+
+    @Override
+    public StudentRes findById(Long id) {
+        return studentRepository.findById(id,StudentRes.class);
     }
 }

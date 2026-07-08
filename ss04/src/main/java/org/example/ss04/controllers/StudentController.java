@@ -17,7 +17,12 @@ public class StudentController {
     public ResponseEntity<?> findAll(
             @RequestParam(value = "search", defaultValue = "") String search
     ) {
-        return ResponseEntity.ok(studentService.findAll(search));
+        return ResponseEntity.ok(studentService.search(search));
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<?> findById(@PathVariable Long id){
+        return ResponseEntity.ok(studentService.findById(id));
     }
 
     @PostMapping
