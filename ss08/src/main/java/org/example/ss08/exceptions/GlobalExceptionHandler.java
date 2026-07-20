@@ -1,5 +1,7 @@
 package org.example.ss08.exceptions;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.example.ss08.models.dtos.wrapper.ApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +16,7 @@ import java.util.Map;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<?> handleValidException(MethodArgumentNotValidException ex) {
+    public ResponseEntity<?> handleValidException(HttpServletRequest request, HttpServletResponse response, MethodArgumentNotValidException ex) {
         /*
             {
                 "name" : "name không được để trống",
