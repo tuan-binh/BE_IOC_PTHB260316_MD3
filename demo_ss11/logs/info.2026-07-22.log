@@ -1,0 +1,57 @@
+2026-07-22 20:12:45.147 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Starting DemoSs11Application using Java 21.0.10 with PID 33980 (D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11)
+2026-07-22 20:12:45.148 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 20:12:46.271 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-22 20:12:46.377 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18f26cb6
+2026-07-22 20:12:46.378 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-22 20:12:47.279 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Started DemoSs11Application in 2.463 seconds (process running for 2.886)
+2026-07-22 20:13:02.371 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-22 20:13:02.373 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-22 20:13:04.075 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Starting DemoSs11Application using Java 21.0.10 with PID 44476 (D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11)
+2026-07-22 20:13:04.076 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 20:13:05.202 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-22 20:13:05.288 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6df590b
+2026-07-22 20:13:05.290 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-22 20:13:06.224 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Started DemoSs11Application in 2.482 seconds (process running for 2.94)
+2026-07-22 20:13:07.818 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-22 20:13:07.820 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-22 20:13:10.241 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Starting DemoSs11Application using Java 21.0.10 with PID 10124 (D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11)
+2026-07-22 20:13:10.243 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 20:13:11.465 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-22 20:13:11.558 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@44690d91
+2026-07-22 20:13:11.559 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-22 20:13:12.694 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Started DemoSs11Application in 2.775 seconds (process running for 3.204)
+2026-07-22 20:13:18.200 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-22 20:13:18.202 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-22 20:13:32.758 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Starting DemoSs11Application using Java 21.0.10 with PID 30824 (D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11)
+2026-07-22 20:13:32.760 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 20:13:33.940 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-22 20:13:34.044 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@51a5d1bb
+2026-07-22 20:13:34.045 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-22 20:13:35.280 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Started DemoSs11Application in 2.848 seconds (process running for 3.316)
+2026-07-22 20:17:29.961 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-22 20:17:29.963 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-22 20:17:30.020 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Starting DemoSs11Application using Java 21.0.10 with PID 30824 (D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11)
+2026-07-22 20:17:30.020 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 20:17:30.187 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-07-22 20:17:30.206 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@7f118183
+2026-07-22 20:17:30.206 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-07-22 20:17:30.321 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Started DemoSs11Application in 0.318 seconds (process running for 238.358)
+2026-07-22 20:17:57.520 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-07-22 20:17:57.521 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-07-22 20:17:59.130 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Starting DemoSs11Application using Java 21.0.10 with PID 7532 (D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11)
+2026-07-22 20:17:59.131 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 20:18:00.276 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-22 20:18:00.364 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a38716c
+2026-07-22 20:18:00.365 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-22 20:18:01.263 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Started DemoSs11Application in 2.434 seconds (process running for 2.863)
+2026-07-22 20:18:24.568 [http-nio-8080-exec-4] INFO  o.e.d.m.s.impl.PatientServiceImpl - Adding new patient PatientReq(fullName=Nguyễn Văn Nhật, phone=0987654321, address=Hà Nội)
+2026-07-22 20:22:31.609 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-22 20:22:31.617 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-22 20:22:31.734 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Starting DemoSs11Application using Java 21.0.10 with PID 7532 (D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11)
+2026-07-22 20:22:31.734 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 20:22:32.311 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-07-22 20:22:32.355 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@214f06b
+2026-07-22 20:22:32.355 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-07-22 20:22:32.690 [restartedMain] INFO  o.e.demo_ss11.DemoSs11Application - Started DemoSs11Application in 1.001 seconds (process running for 274.29)
+2026-07-22 20:59:59.450 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-07-22 20:59:59.452 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.

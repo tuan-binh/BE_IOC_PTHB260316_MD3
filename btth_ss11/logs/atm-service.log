@@ -1,0 +1,459 @@
+2026-07-22 21:12:49:175 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Starting BtthSs11Application using Java 21.0.10 with PID 45096 (D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11)
+2026-07-22 21:12:49:177 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 21:12:49:207 - INFO - restartedMain - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-22 21:12:49:207 - INFO - restartedMain - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-22 21:12:49:540 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-22 21:12:49:551 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2026-07-22 21:12:49:816 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-22 21:12:49:825 - INFO - restartedMain - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-22 21:12:49:825 - INFO - restartedMain - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-22 21:12:49:850 - INFO - restartedMain - org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 642 ms
+2026-07-22 21:12:49:944 - INFO - restartedMain - org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-22 21:12:49:988 - INFO - restartedMain - org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-22 21:12:50:274 - INFO - restartedMain - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-22 21:12:50:299 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-22 21:12:51:389 - WARN - restartedMain - org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 3D000
+2026-07-22 21:12:51:389 - WARN - restartedMain - org.hibernate.orm.jdbc.error - FATAL: database "btth_ss11" does not exist
+2026-07-22 21:12:51:398 - WARN - restartedMain - org.hibernate.orm.jdbc - HHH100046: Could not obtain connection to query JDBC database metadata
+org.hibernate.exception.GenericJDBCException: Unable to obtain isolated JDBC connection [FATAL: database "btth_ss11" does not exist] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:39)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:101)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:51)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:366)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironment(JdbcEnvironmentInitiator.java:143)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:120)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:80)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:260)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:235)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:212)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:251)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:203)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:180)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1388)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.populateSessionFactoryBuilder(EntityManagerFactoryBuilderImpl.java:1468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1450)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.example.btth_ss11.BtthSs11Application.main(BtthSs11Application.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: org.postgresql.util.PSQLException: FATAL: database "btth_ss11" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:3029)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:237)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:396)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:52)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:290)
+	at org.postgresql.Driver.makeConnection(Driver.java:448)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DataSourceConnectionProvider.getConnection(DataSourceConnectionProvider.java:149)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:508)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:48)
+	... 40 common frames omitted
+2026-07-22 21:12:51:416 - WARN - restartedMain - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-22 21:12:51:424 - INFO - restartedMain - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [undefined/unknown]
+	Database driver: undefined/unknown
+	Database dialect: PostgreSQLDialect
+	Database version: 14.0
+	Default catalog/schema: unknown/unknown
+	Autocommit mode: undefined/unknown
+	Isolation level: NONE [default NONE]
+	JDBC fetch size: undefined/unknown
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-22 21:12:52:010 - INFO - restartedMain - org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-22 21:12:52:022 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-22 21:12:53:038 - WARN - restartedMain - org.hibernate.orm.jdbc.error - HHH000247: ErrorCode: 0, SQLState: 3D000
+2026-07-22 21:12:53:038 - WARN - restartedMain - org.hibernate.orm.jdbc.error - FATAL: database "btth_ss11" does not exist
+2026-07-22 21:12:53:042 - ERROR - restartedMain - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: database "btth_ss11" does not exist] [n/a]
+2026-07-22 21:12:53:043 - WARN - restartedMain - org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: database "btth_ss11" does not exist] [n/a]
+2026-07-22 21:12:53:046 - INFO - restartedMain - org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2026-07-22 21:12:53:052 - INFO - restartedMain - org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-22 21:12:53:065 - ERROR - restartedMain - org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: database "btth_ss11" does not exist] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1815)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.example.btth_ss11.BtthSs11Application.main(BtthSs11Application.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: jakarta.persistence.PersistenceException: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: database "btth_ss11" does not exist] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:448)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	... 18 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: database "btth_ss11" does not exist] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:39)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:101)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:71)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:37)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:61)
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:41)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:36)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:73)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:63)
+	at org.hibernate.tool.schema.extract.internal.CachingDatabaseInformationImpl.<init>(CachingDatabaseInformationImpl.java:43)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.buildDatabaseInformation(GroupedSchemaMigratorImpl.java:112)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:83)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	... 22 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: database "btth_ss11" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2904)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:3029)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:237)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:396)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:52)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:290)
+	at org.postgresql.Driver.makeConnection(Driver.java:448)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DataSourceConnectionProvider.getConnection(DataSourceConnectionProvider.java:149)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:508)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:44)
+	... 44 common frames omitted
+2026-07-22 21:13:31:385 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Starting BtthSs11Application using Java 21.0.10 with PID 32352 (D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11)
+2026-07-22 21:13:31:387 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 21:13:31:415 - INFO - restartedMain - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-22 21:13:31:415 - INFO - restartedMain - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-22 21:13:31:753 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-22 21:13:31:766 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2026-07-22 21:13:32:015 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-22 21:13:32:023 - INFO - restartedMain - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-22 21:13:32:023 - INFO - restartedMain - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-22 21:13:32:045 - INFO - restartedMain - org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 630 ms
+2026-07-22 21:13:32:139 - INFO - restartedMain - org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-22 21:13:32:164 - INFO - restartedMain - org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-22 21:13:32:397 - INFO - restartedMain - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-22 21:13:32:416 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-22 21:13:32:500 - INFO - restartedMain - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b0422af
+2026-07-22 21:13:32:502 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-22 21:13:32:516 - WARN - restartedMain - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-22 21:13:32:531 - INFO - restartedMain - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/btth_ss11]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.5
+	Default catalog/schema: btth_ss11/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-22 21:13:33:050 - INFO - restartedMain - org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-22 21:13:33:116 - INFO - restartedMain - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:13:33:144 - WARN - restartedMain - org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-22 21:13:33:341 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-22 21:13:33:344 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Started BtthSs11Application in 2.216 seconds (process running for 2.631)
+2026-07-22 21:21:47:113 - INFO - File Watcher - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 5 class path changes (5 additions, 0 deletions, 0 modifications)
+2026-07-22 21:21:47:120 - INFO - Thread-1 - org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-22 21:21:47:135 - INFO - tomcat-shutdown - org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-22 21:21:47:140 - INFO - Thread-1 - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:21:47:143 - INFO - Thread-1 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-22 21:21:47:147 - INFO - Thread-1 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-22 21:21:47:222 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Starting BtthSs11Application using Java 21.0.10 with PID 32352 (D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11)
+2026-07-22 21:21:47:223 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 21:21:47:482 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-22 21:21:47:544 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2026-07-22 21:21:47:750 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-22 21:21:47:753 - INFO - restartedMain - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-22 21:21:47:753 - INFO - restartedMain - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-22 21:21:47:776 - INFO - restartedMain - org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 551 ms
+2026-07-22 21:21:47:823 - INFO - restartedMain - org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-22 21:21:47:883 - INFO - restartedMain - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-22 21:21:47:887 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-07-22 21:21:47:924 - INFO - restartedMain - com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@7a8ae4c2
+2026-07-22 21:21:47:925 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-07-22 21:21:47:929 - WARN - restartedMain - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-22 21:21:47:934 - INFO - restartedMain - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/btth_ss11]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.5
+	Default catalog/schema: btth_ss11/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-22 21:21:48:055 - INFO - restartedMain - org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-22 21:21:48:091 - INFO - restartedMain - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:21:48:240 - INFO - restartedMain - org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-22 21:21:48:473 - WARN - restartedMain - org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-22 21:21:48:606 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-22 21:21:48:609 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Started BtthSs11Application in 1.413 seconds (process running for 497.896)
+2026-07-22 21:21:48:611 - INFO - restartedMain - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-22 21:24:57:417 - INFO - File Watcher - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-07-22 21:24:57:418 - INFO - Thread-5 - org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-22 21:24:57:423 - INFO - tomcat-shutdown - org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-22 21:24:57:424 - INFO - Thread-5 - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:24:57:424 - INFO - Thread-5 - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-07-22 21:24:57:426 - INFO - Thread-5 - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-07-22 21:24:57:483 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Starting BtthSs11Application using Java 21.0.10 with PID 32352 (D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11)
+2026-07-22 21:24:57:483 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 21:24:57:563 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-22 21:24:57:571 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2026-07-22 21:24:57:603 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-22 21:24:57:605 - INFO - restartedMain - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-22 21:24:57:605 - INFO - restartedMain - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-22 21:24:57:613 - INFO - restartedMain - org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 128 ms
+2026-07-22 21:24:57:627 - INFO - restartedMain - org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-22 21:24:57:639 - INFO - restartedMain - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-22 21:24:57:639 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-07-22 21:24:57:655 - INFO - restartedMain - com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@476b581d
+2026-07-22 21:24:57:656 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-07-22 21:24:57:657 - WARN - restartedMain - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-22 21:24:57:661 - INFO - restartedMain - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/btth_ss11]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.5
+	Default catalog/schema: btth_ss11/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-22 21:24:57:689 - INFO - restartedMain - org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-22 21:24:57:706 - INFO - restartedMain - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:24:57:734 - WARN - restartedMain - org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-22 21:24:57:780 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-22 21:24:57:784 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Started BtthSs11Application in 0.315 seconds (process running for 687.071)
+2026-07-22 21:24:57:785 - INFO - restartedMain - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-22 21:24:59:183 - INFO - File Watcher - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2026-07-22 21:24:59:183 - INFO - Thread-9 - org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-22 21:24:59:187 - INFO - tomcat-shutdown - org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-22 21:24:59:188 - INFO - Thread-9 - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:24:59:188 - INFO - Thread-9 - com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-07-22 21:24:59:189 - INFO - Thread-9 - com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-07-22 21:24:59:232 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Starting BtthSs11Application using Java 21.0.10 with PID 32352 (D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11)
+2026-07-22 21:24:59:233 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 21:24:59:292 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-22 21:24:59:300 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2026-07-22 21:24:59:333 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-22 21:24:59:333 - INFO - restartedMain - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-22 21:24:59:333 - INFO - restartedMain - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-22 21:24:59:344 - INFO - restartedMain - org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 110 ms
+2026-07-22 21:24:59:359 - INFO - restartedMain - org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-22 21:24:59:375 - INFO - restartedMain - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-22 21:24:59:376 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-07-22 21:24:59:407 - INFO - restartedMain - com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@4baca322
+2026-07-22 21:24:59:408 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-07-22 21:24:59:413 - WARN - restartedMain - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-22 21:24:59:419 - INFO - restartedMain - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/btth_ss11]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.5
+	Default catalog/schema: btth_ss11/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-22 21:24:59:447 - INFO - restartedMain - org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-22 21:24:59:468 - INFO - restartedMain - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:24:59:496 - WARN - restartedMain - org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-22 21:24:59:530 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-22 21:24:59:532 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Started BtthSs11Application in 0.309 seconds (process running for 688.818)
+2026-07-22 21:24:59:532 - INFO - restartedMain - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-22 21:27:54:929 - INFO - SpringApplicationShutdownHook - org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-22 21:27:54:933 - INFO - tomcat-shutdown - org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-22 21:27:54:933 - INFO - SpringApplicationShutdownHook - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:27:54:933 - INFO - SpringApplicationShutdownHook - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-07-22 21:27:54:935 - INFO - SpringApplicationShutdownHook - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-07-22 21:27:57:232 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Starting BtthSs11Application using Java 21.0.10 with PID 43436 (D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11)
+2026-07-22 21:27:57:233 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 21:27:57:262 - INFO - restartedMain - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-22 21:27:57:262 - INFO - restartedMain - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-22 21:27:57:606 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-22 21:27:57:637 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2026-07-22 21:27:57:896 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-22 21:27:57:905 - INFO - restartedMain - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-22 21:27:57:906 - INFO - restartedMain - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-22 21:27:57:931 - INFO - restartedMain - org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 668 ms
+2026-07-22 21:27:58:033 - INFO - restartedMain - org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-22 21:27:58:081 - INFO - restartedMain - org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-22 21:27:58:362 - INFO - restartedMain - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-22 21:27:58:391 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-22 21:27:58:471 - INFO - restartedMain - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@50be7060
+2026-07-22 21:27:58:473 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-22 21:27:58:499 - WARN - restartedMain - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-22 21:27:58:556 - INFO - restartedMain - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/btth_ss11]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.5
+	Default catalog/schema: btth_ss11/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-22 21:27:59:151 - INFO - restartedMain - org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-22 21:27:59:203 - INFO - restartedMain - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:27:59:245 - INFO - restartedMain - org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-22 21:27:59:323 - WARN - restartedMain - org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-22 21:27:59:510 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-22 21:27:59:514 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Started BtthSs11Application in 2.525 seconds (process running for 2.947)
+2026-07-22 21:28:25:103 - INFO - http-nio-8080-exec-1 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-22 21:28:25:103 - INFO - http-nio-8080-exec-1 - org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-22 21:28:25:106 - INFO - http-nio-8080-exec-1 - org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-07-22 21:28:25:128 - WARN - http-nio-8080-exec-1 - org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-07-22 21:28:29:030 - INFO - http-nio-8080-exec-5 - org.example.btth_ss11.models.services.impl.TransferServiceImpl - precessWithdrawal gồm tài khoản người dùng 1 muốn rút tiền là 400000.0
+2026-07-22 21:30:50:176 - INFO - File Watcher - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-07-22 21:30:50:184 - INFO - Thread-1 - org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-22 21:30:50:209 - INFO - tomcat-shutdown - org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-22 21:30:50:213 - INFO - Thread-1 - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:30:50:218 - INFO - Thread-1 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-22 21:30:50:221 - INFO - Thread-1 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-22 21:30:50:319 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Starting BtthSs11Application using Java 21.0.10 with PID 43436 (D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11)
+2026-07-22 21:30:50:319 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 21:30:50:585 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-22 21:30:50:611 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2026-07-22 21:30:50:797 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-22 21:30:50:798 - INFO - restartedMain - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-22 21:30:50:798 - INFO - restartedMain - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-22 21:30:50:810 - INFO - restartedMain - org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 488 ms
+2026-07-22 21:30:50:829 - INFO - restartedMain - org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-22 21:30:50:842 - INFO - restartedMain - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-22 21:30:50:843 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-07-22 21:30:50:860 - INFO - restartedMain - com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@2e923f68
+2026-07-22 21:30:50:860 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-07-22 21:30:50:863 - WARN - restartedMain - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-22 21:30:50:867 - INFO - restartedMain - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/btth_ss11]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.5
+	Default catalog/schema: btth_ss11/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-22 21:30:50:899 - INFO - restartedMain - org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-22 21:30:50:921 - INFO - restartedMain - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:30:50:953 - WARN - restartedMain - org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-22 21:30:51:000 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-22 21:30:51:002 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Started BtthSs11Application in 0.708 seconds (process running for 174.436)
+2026-07-22 21:30:51:003 - INFO - restartedMain - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-22 21:31:21:108 - INFO - SpringApplicationShutdownHook - org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-22 21:31:21:112 - INFO - tomcat-shutdown - org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-22 21:31:21:113 - INFO - SpringApplicationShutdownHook - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:31:21:114 - INFO - SpringApplicationShutdownHook - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-07-22 21:31:21:115 - INFO - SpringApplicationShutdownHook - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-07-22 21:31:23:207 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Starting BtthSs11Application using Java 21.0.10 with PID 5128 (D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\btth_ss11)
+2026-07-22 21:31:23:208 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 21:31:23:238 - INFO - restartedMain - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-22 21:31:23:238 - INFO - restartedMain - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-22 21:31:23:591 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-22 21:31:23:623 - INFO - restartedMain - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2026-07-22 21:31:23:864 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-22 21:31:23:876 - INFO - restartedMain - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-22 21:31:23:876 - INFO - restartedMain - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-22 21:31:23:906 - INFO - restartedMain - org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 668 ms
+2026-07-22 21:31:23:990 - INFO - restartedMain - org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-22 21:31:24:018 - INFO - restartedMain - org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-22 21:31:24:258 - INFO - restartedMain - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-22 21:31:24:276 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-22 21:31:24:361 - INFO - restartedMain - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@616b2ad9
+2026-07-22 21:31:24:362 - INFO - restartedMain - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-22 21:31:24:381 - WARN - restartedMain - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-22 21:31:24:398 - INFO - restartedMain - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/btth_ss11]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.5
+	Default catalog/schema: btth_ss11/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-22 21:31:24:909 - INFO - restartedMain - org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-22 21:31:24:957 - INFO - restartedMain - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 21:31:24:997 - INFO - restartedMain - org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-22 21:31:25:071 - WARN - restartedMain - org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-22 21:31:25:261 - INFO - restartedMain - org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-22 21:31:25:264 - INFO - restartedMain - org.example.btth_ss11.BtthSs11Application - Started BtthSs11Application in 2.304 seconds (process running for 2.701)
+2026-07-22 21:31:30:926 - INFO - http-nio-8080-exec-2 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-22 21:31:30:926 - INFO - http-nio-8080-exec-2 - org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-22 21:31:30:927 - INFO - http-nio-8080-exec-2 - org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-22 21:31:31:037 - INFO - http-nio-8080-exec-2 - org.example.btth_ss11.models.services.impl.TransferServiceImpl - precessWithdrawal gồm tài khoản người dùng 3 muốn rút tiền là 400000.0
+2026-07-22 21:31:31:104 - ERROR - http-nio-8080-exec-2 - org.example.btth_ss11.exceptions.GlobalExceptionHandler - Account not found
+2026-07-22 21:31:31:125 - WARN - http-nio-8080-exec-2 - org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.example.btth_ss11.exceptions.NotFoundException: Account not found]

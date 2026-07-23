@@ -1,0 +1,128 @@
+2026-07-22 20:03:39 - INFO - org.example.demo_ss11.DemoSs11Application - Starting DemoSs11Application using Java 21.0.10 with PID 40320 (D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11)
+2026-07-22 20:03:39 - INFO - org.example.demo_ss11.DemoSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 20:03:39 - INFO - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-22 20:03:39 - INFO - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-22 20:03:39 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-22 20:03:39 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2026-07-22 20:03:40 - INFO - org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-22 20:03:40 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-22 20:03:40 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-22 20:03:40 - INFO - org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 809 ms
+2026-07-22 20:03:40 - INFO - org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-22 20:03:40 - INFO - org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-22 20:03:40 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-22 20:03:40 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-22 20:03:40 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@44ce8ebd
+2026-07-22 20:03:40 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-22 20:03:40 - WARN - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-22 20:03:40 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/demo_ss11]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.5
+	Default catalog/schema: demo_ss11/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-22 20:03:41 - INFO - org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-22 20:03:41 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 20:03:41 - INFO - org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-22 20:03:41 - WARN - org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-22 20:03:41 - INFO - org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-22 20:03:41 - INFO - org.example.demo_ss11.DemoSs11Application - Started DemoSs11Application in 2.785 seconds (process running for 3.229)
+2026-07-22 20:03:45 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-22 20:03:45 - INFO - org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-22 20:03:45 - INFO - org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-22 20:03:46 - INFO - org.example.demo_ss11.models.services.impl.PatientServiceImpl - Adding new patient PatientReq(fullName=Nguyễn Văn Chương, phone=0987654321, address=Hà Nội)
+2026-07-22 20:04:44 - INFO - org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-22 20:04:44 - INFO - org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-22 20:04:44 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 20:04:44 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-22 20:04:44 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-22 20:04:46 - INFO - org.example.demo_ss11.DemoSs11Application - Starting DemoSs11Application using Java 21.0.10 with PID 17460 (D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11)
+2026-07-22 20:04:46 - INFO - org.example.demo_ss11.DemoSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 20:04:46 - INFO - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-22 20:04:46 - INFO - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-22 20:04:46 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-22 20:04:46 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2026-07-22 20:04:46 - INFO - org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-22 20:04:46 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-22 20:04:46 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-22 20:04:46 - INFO - org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 695 ms
+2026-07-22 20:04:47 - INFO - org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-22 20:04:47 - INFO - org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-22 20:04:47 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-22 20:04:47 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-22 20:04:47 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3caf126e
+2026-07-22 20:04:47 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-22 20:04:47 - WARN - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-22 20:04:47 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/demo_ss11]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.5
+	Default catalog/schema: demo_ss11/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-22 20:04:48 - INFO - org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-22 20:04:48 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 20:04:48 - INFO - org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-22 20:04:48 - WARN - org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-22 20:04:48 - INFO - org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-22 20:04:48 - INFO - org.example.demo_ss11.DemoSs11Application - Started DemoSs11Application in 2.438 seconds (process running for 2.908)
+2026-07-22 20:06:27 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-22 20:06:27 - INFO - org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-22 20:06:27 - INFO - org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-22 20:06:27 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 20:06:27 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-22 20:06:27 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-22 20:06:27 - INFO - org.example.demo_ss11.DemoSs11Application - Starting DemoSs11Application using Java 21.0.10 with PID 17460 (D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11\build\classes\java\main started by binh1 in D:\BE_IOC\JB_IOC_PTHB260316\module03\demo_ss11)
+2026-07-22 20:06:27 - INFO - org.example.demo_ss11.DemoSs11Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-22 20:06:28 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-22 20:06:28 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2026-07-22 20:06:28 - INFO - org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-22 20:06:28 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-22 20:06:28 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-22 20:06:28 - INFO - org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 164 ms
+2026-07-22 20:06:28 - INFO - org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-22 20:06:28 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-22 20:06:28 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-07-22 20:06:28 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@498f074e
+2026-07-22 20:06:28 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-07-22 20:06:28 - WARN - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-22 20:06:28 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/demo_ss11]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.5
+	Default catalog/schema: demo_ss11/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-22 20:06:28 - INFO - org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-22 20:06:28 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 20:06:28 - WARN - org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-22 20:06:28 - INFO - org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-07-22 20:06:28 - INFO - org.example.demo_ss11.DemoSs11Application - Started DemoSs11Application in 0.406 seconds (process running for 102.832)
+2026-07-22 20:06:28 - INFO - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-07-22 20:06:38 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-22 20:06:38 - INFO - org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-22 20:06:38 - INFO - org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-22 20:06:39 - ERROR - org.example.demo_ss11.exceptions.GlobalExceptionHandler - Exception Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> org.example.demo_ss11.controllers.PatientController.addNewPatient(org.example.demo_ss11.models.dtos.req.PatientReq) with 3 errors: [Field error in object 'patientReq' on field 'fullName': rejected value [null]; codes [NotBlank.patientReq.fullName,NotBlank.fullName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientReq.fullName,fullName]; arguments []; default message [fullName]]; default message [full name không được để trống]] [Field error in object 'patientReq' on field 'phone': rejected value [null]; codes [NotBlank.patientReq.phone,NotBlank.phone,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientReq.phone,phone]; arguments []; default message [phone]]; default message [phone không được để trống]] [Field error in object 'patientReq' on field 'address': rejected value [null]; codes [NotBlank.patientReq.address,NotBlank.address,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientReq.address,address]; arguments []; default message [address]]; default message [address không được để trống]] 
+2026-07-22 20:06:39 - WARN - org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> org.example.demo_ss11.controllers.PatientController.addNewPatient(org.example.demo_ss11.models.dtos.req.PatientReq) with 3 errors: [Field error in object 'patientReq' on field 'fullName': rejected value [null]; codes [NotBlank.patientReq.fullName,NotBlank.fullName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientReq.fullName,fullName]; arguments []; default message [fullName]]; default message [full name không được để trống]] [Field error in object 'patientReq' on field 'phone': rejected value [null]; codes [NotBlank.patientReq.phone,NotBlank.phone,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientReq.phone,phone]; arguments []; default message [phone]]; default message [phone không được để trống]] [Field error in object 'patientReq' on field 'address': rejected value [null]; codes [NotBlank.patientReq.address,NotBlank.address,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientReq.address,address]; arguments []; default message [address]]; default message [address không được để trống]] ]
+2026-07-22 20:09:41 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-22 20:09:41 - INFO - org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-22 20:09:41 - INFO - org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-07-22 20:09:41 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-22 20:09:41 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-07-22 20:09:41 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
